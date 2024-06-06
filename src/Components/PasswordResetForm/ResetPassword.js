@@ -4,6 +4,9 @@ import { sendPasswordResetEmail } from "firebase/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { showSuccessAlert, showFailedAlert } from "../Toast/Toastify";
 
 import "./ResetPassword.css";
 
@@ -18,9 +21,13 @@ const PasswordResetForm = () => {
       await sendPasswordResetEmail(auth, email);
       setError("");
       setMessage("Password reset email sent. Please check your inbox.");
+      showSuccessAlert("Password reset email sent. Please check your inbox.");
     } catch (error) {
       setMessage("");
       setError(
+        " Failed to send password reset link to email, Please Enter valid email."
+      );
+      showFailedAlert(
         " Failed to send password reset link to email, Please Enter valid email."
       );
     }
@@ -28,6 +35,7 @@ const PasswordResetForm = () => {
 
   return (
     <div className="password-reset-container">
+      <ToastContainer />
       <h1 className="company-logo">AuthFlow</h1>
       <br></br>
       <h1>

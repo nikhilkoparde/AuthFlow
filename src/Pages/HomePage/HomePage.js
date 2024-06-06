@@ -15,9 +15,10 @@ export default function HomePage() {
             <br></br>
             <h2 className="h2dash">
               <li style={{ color: "black" }}>
-                <a href="#">
-                  <i class="bi bi-house"></i>Dashboard
-                </a>
+                <button className={"btn"}>
+                  {" "}
+                  <i class="bi bi-person-circle"></i> Dashboard
+                </button>
               </li>
             </h2>
             <hr></hr>
@@ -63,6 +64,7 @@ export default function HomePage() {
         </div>
         <div className="main-content">
           {/* Main content */}
+          <br></br>
           <h2 className="mainname"> Welcome To Your DashBoard : {user}</h2>
         </div>
       </div>
