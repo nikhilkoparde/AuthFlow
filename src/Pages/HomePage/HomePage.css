@@ -1,0 +1,83 @@
+.mainname {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.heading {
+  border: 2px solid black;
+}
+
+.header {
+  align-items: center;
+  margin-left: 600px;
+}
+
+.divbtntoview {
+  align-items: center;
+  margin-left: 50px;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f0f0f0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a,
+.sidebar button {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar a:hover,
+.sidebar button:hover {
+  background-color: #ddd;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.widgets {
+  display: flex;
+}
+
+.widget {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.widget:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  width: 100%;
+}
