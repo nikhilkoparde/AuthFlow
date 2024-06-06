@@ -1,4 +1,4 @@
-# AUTHFLOW Project
+# Project Name: AUTHFLOW
 
 ## Description
 
@@ -8,6 +8,8 @@ A simple React application with user authentication (sign-up, login, logout) usi
 
 - User sign-up with email and password.
 - User login.
+- Password Reset
+- Email verification
 - Protected routes for authenticated users.
 - User session management.
 - Logout functionality.
@@ -31,6 +33,7 @@ A simple React application with user authentication (sign-up, login, logout) usi
 - Navigate to `/signup` to create a new account.
 - Navigate to `/login` to log in.
 - Access protected routes (e.g., `/dashboard`) after logging in.
+- To Reset Password `/resetpassword`
 - Log out using the logout button on the dashboard.
 - Implemented password reset functionality.
 - Added email verification during sign-up.
